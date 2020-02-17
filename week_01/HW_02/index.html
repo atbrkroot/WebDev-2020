@@ -1,0 +1,101 @@
+<DOCTYPE! html>
+
+<html> 
+
+
+<head>
+<title> homework2 </title>
+<style>
+#myTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#myTable td, #myTable th {
+    border: 1px solid #fff;
+	padding: 1px 20px 25px 5px;
+}
+
+#myTable tr:nth-child(odd){background-color: #f1f2f4;}
+#myTable tr:nth-child(even){background-color: #e0e3e8;}
+
+#myTable th {
+background-color: #a1b2c1;
+text-align: left;
+color: #fff;
+padding: 1px 20px 20px 5px;
+border-bottom-width: 3px;}
+
+.fx-row1 {
+max-width: 35px;
+}
+
+.hr-red { 
+background:red;
+border-color:red;
+color:red;}
+
+#br-w {
+    width: 60%;
+    height: 9px;
+    left: 0;
+    display: inline-flex;
+    margin-top: -8px;
+}
+
+</style>
+<head/>
+<body>
+<h1> Table Structure </h1>
+<hr class="hr-red">
+<hr id="br-w" class="hr-red">
+
+<table id="myTable">
+
+<tr>
+<th class="fx-row">Element</th>
+<th>Tag </th>
+<th>Required?</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="fx-row"> <strong> Table </strong> </td>
+<td> &#60;table&#62;...&#60;/table&#62;</td>
+<td> Yes</td>
+<td> Creates Table. <br /> 
+Call other table elments</td>
+</tr>
+<tr>
+<td class="fx-row"> <strong> Table Caption</strong> </td>
+<td> &#60;caption&#62;...&#60;/caption&#62;</td>
+<td> No</td>
+<td> Adds a caption on title, appears above the table default
+</td>
+</tr>
+<tr>
+<td class="fx-row"> <strong> Table Row</strong> </td>
+<td> &#60;tr&#62;...&#60;/tr&#62;</td>
+<td> Yes</td>
+<td> Contains all data for a table row
+</td>
+</tr>
+<tr>
+<td class="fx-row"> <strong> Table Header</strong> </td>
+<td> &#60;th&#62;...&#60;/th&#62;</td>
+<td> No</td>
+<td> Normally describes cells in the top <br /> row or left column <br /> By default, text in cell will appear <strong> bold</strong> <br /> and <strong> centered </strong>
+</td>
+</tr>
+<tr>
+<td class="fx-row"> <strong> Table Data</strong> </td>
+<td> &#60;td&#62;...&#60;/td&#62;</td>
+<td> Yes</td>
+<td> Describes table cell contains. <br /> By default, text is left-justified. 
+</td>
+</tr>
+
+</table>
+<hr class="hr-red" /> 
+
+</body>
+</html>
